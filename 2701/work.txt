@@ -1,0 +1,226 @@
+Script started on Thursday 11 February 2016 10:00:52 PM IST
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ls
+work.txt
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ls -1[Kl
+total 0
+-rw-rw-r-- 1 s4c2 s4c2 0 Feb 11 22:00 work.txt
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ls -lt
+total 0
+-rw-rw-r-- 1 s4c2 s4c2 0 Feb 11 22:00 work.txt
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ls -ltr
+total 0
+-rw-rw-r-- 1 s4c2 s4c2 0 Feb 11 22:00 work.txt
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ls abv[K*[K[K[K2701* -d
+ls: cannot access '2701*': No such file or directory
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ls 2701 -d
+ls: cannot access '2701': No such file or directory
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ls ~/ceccs18c51/cs232/2701 -d
+[0m[01;34m/home/s4c2/ceccs18c51/cs232/2701[0m
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ cat6[K>abc.txt
+alpha
+bravo
+charlie
+delta
+^C
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ sort -n fn
+sort: cannot read: fn: No such file or directory
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ sort -n abc.txt
+alpha
+bravo
+charlie
+delta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ sort -n [K[Krn abc.ttx[K[Kxt
+delta
+charlie
+bravo
+alpha
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ cat>a[Kxyz.txt
+beta    alpga  ha
+beta
+gamma
+det lta
+eta
+^C
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ join abc.tyc[K[Kxt xyz.txt
+alpha
+join: xyz.txt:4: is not sorted: delta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ sort -r[Kn xyz.txt
+alpha
+beta
+delta
+eta
+gamma
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ join[K[K[K[Ksort -n xyz.txt[5@join abc.txt[C[C[C[C[C[C[C[C
+alpha
+join: xyz.txt:4: is not sorted: delta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ grep ch[K[K"charlie" abc.txt
+[01;31m[Kcharlie[m[K
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ grep -r "a" abc.tc[Kxt
+[01;31m[Ka[m[Klph[01;31m[Ka[m[K
+br[01;31m[Ka[m[Kvo
+ch[01;31m[Ka[m[Krlie
+delt[01;31m[Ka[m[K
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ grep -w "a" abc.txt
+
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ifconfig -a
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.83  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::b56:272f:6b7c:a52d/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:18098 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:158 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1381301 (1.3 MB)  TX bytes:16611 (16.6 KB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:5596 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:5596 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:397000 (397.0 KB)  TX bytes:397000 (397.0 KB)
+
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ pijng[K[K[Kng
+Usage: ping [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ join [K[K[K[K[Kpaste[K[K[K[K[Kpaste [K[K[K[K[K[Kjoin abc.txt xyz.txt -j2
+ alpha alpha
+ alpha beta
+ alpha gamma
+ alpha delta
+ alpha eta
+ bravo alpha
+ bravo beta
+ bravo gamma
+ bravo delta
+ bravo eta
+ charlie alpha
+ charlie beta
+ charlie gamma
+ charlie delta
+ charlie eta
+ delta alpha
+ delta beta
+ delta gamma
+ delta delta
+ delta eta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ join -1 3 -2 1 abc.txt xyz.txt 
+[A
+join: xyz.txt:4: is not sorted: delta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ sort -rn xw[Kyz.txt
+gamma
+eta
+delta
+beta
+alpha
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ sort -rn xyz.txtjoin -1 3 -2 1 abc.txt xyz.txt 
+[A
+join: xyz.txt:4: is not sorted: delta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ join -1 3 -2 1 abc.txt xyz.txt 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Psort -rn
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjoin -1 3 -2 1 abc.txt xyz.txt 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pabc.txt xyz.txt -j2
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-1 3 -2 1 abc.txt xyz.txt 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Psort -rn
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+alpha
+beta
+delta
+eta
+gamma
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ sort -n xyz.txtjoin -1 3 -2 1 abc.txt xyz.txt 
+[A
+join: xyz.txt:4: is not sorted: delta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ paste[K[K[K[K[Kjoin -1 3 -2 1 abc.txt xyz.txt 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Psort -n
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjoin -1 3 -2 1 abc.txt xyz.txt 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Psort -rn
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjoin -1 3 -2 1 abc.txt xyz.txt 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pabc.txt xyz.txt -j2
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cping[Kjoin abc.txt xyz.txt -j2[1P[1P[1P[1P[1@p[1@a[1@s[1@t[1@e
+paste: invalid option -- 'j'
+Try 'paste --help' for more information.
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ paste --help
+Usage: paste [OPTION]... [FILE]...
+Write lines consisting of the sequentially corresponding lines from
+each FILE, separated by TABs, to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -d, --delimiters=LIST   reuse characters from LIST instead of TABs
+  -s, --serial            paste one file at a time instead of in parallel
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/paste>
+or available locally via: info '(coreutils) paste invocation'
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ gasdvausjkn[K[K[K[K[K[K[K[K[K[K[K            [K[K[K[K[K[K[K[K[K[K[K[K..................[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpaste --helpabc.txt xyz.txt -j2[C[C[C[C[1Pj2[1P2[K
+alpha	alpha
+bravo	beta
+charlie	gamma
+delta	delta
+	eta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ ping
+Usage: ping [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ p[Kidf[K[Kfconfig
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.83  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::765:1a1e:e844:822d/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:43465 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:676 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3495584 (3.4 MB)  TX bytes:86654 (86.6 KB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:11896 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:11896 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:821552 (821.5 KB)  TX bytes:821552 (821.5 KB)
+
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ export http_proxy=http://192.1 
+68.0.2:3128
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ export https_proxy=http://192. 
+168.0.2:3128
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ grep "[K-c "a" xyz.txt
+5
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ man
+What manual page do you want?
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ free
+              total        used        free      shared  buff/cache   available
+Mem:        1902612      826264      228344      232164      848004      655656
+Swap:       1955836       15116     1940720
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ cat>num.txt
+3
+2
+1
+4
+5
+^C
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ awk [K '{s+=$1} END {print s)[K}' nu 
+m.txt
+15
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/2701[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/2701[00m$ exit
+exit
+
+Script done on Monday 27 January 2020 10:18:50 AM IST

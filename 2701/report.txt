@@ -1,0 +1,107 @@
+CEC CS 18 C51    27-01-2020
+Rojin K Sunny
+
+--------------------------------
+#1: Aim: Sort a text file
+---------------------------------
+Program: sort -n abc.txt
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+      # Unsorted file
+        abc.txt     
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Terminal displays sorted version of the input file.
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2: Aim: Search for a key in a text file
+---------------------------------
+Program: grep "key" abc.txt
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+      # Key
+      # File to be searched     
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Terminal displays all the occurences of the given key in the input file.
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+
+#3: Aim: Join 2 files and display all combinations of elements
+---------------------------------
+Program: join abc.txt xyz.txt -j2
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+       2 file names to be joined   
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Terminal displays all the combinations of the content in the 2 files.
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+
+
+#4: Aim: Create a number file and add the numbers in it
+---------------------------------
+Program: cat>num.txt
+          awk '{s+=$1} END {print s}' num.txt
+
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+      # The numbers contained in the file  
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Terminal displays the sum of numbers in the file.
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+
+
+
+
+
