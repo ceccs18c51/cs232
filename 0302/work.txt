@@ -1,0 +1,580 @@
+Script started on Monday 03 February 2020 9:15:20 AM IST
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ in[Kfconfig
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.83  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::b56:272f:6b7c:a52d/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:37260 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1709 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3918139 (3.9 MB)  TX bytes:210794 (210.7 KB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:362 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:362 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:26496 (26.4 KB)  TX bytes:26496 (26.4 KB)
+
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ in[Kfconfig -a
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.83  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::b56:272f:6b7c:a52d/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:37318 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1714 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3922417 (3.9 MB)  TX bytes:211144 (211.1 KB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:362 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:362 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:26496 (26.4 KB)  TX bytes:26496 (26.4 KB)
+
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ ifconfig enp0s25
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.83  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::b56:272f:6b7c:a52d/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:37733 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1720 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3950223 (3.9 MB)  TX bytes:211558 (211.5 KB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+link-local      *               255.255.0.0     U     1000   0        0 enp0s25
+192.168.0.0     *               255.255.254.0   U     100    0        0 enp0s25
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 enp0s25
+192.168.0.0     0.0.0.0         255.255.254.0   U     100    0        0 enp0s25
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ ping 192.168.0.30
+PING 192.168.0.30 (192.168.0.30) 56(84) bytes of data.
+64 bytes from 192.168.0.30: icmp_seq=9 ttl=64 time=1.51 ms
+^C
+--- 192.168.0.30 ping statistics ---
+9 packets transmitted, 1 received, 88% packet loss, time 8185ms
+rtt min/avg/max/mdev = 1.512/1.512/1.512/0.000 ms
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ ping www.github.com
+ping: unknown host www.github.com
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ route add - [Khost [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kping 192.168.0.166
+PING 192.168.0.166 (192.168.0.166) 56(84) bytes of data.
+64 bytes from 192.168.0.166: icmp_seq=1 ttl=64 time=1.23 ms
+64 bytes from 192.168.0.166: icmp_seq=2 ttl=64 time=0.629 ms
+64 bytes from 192.168.0.166: icmp_seq=3 ttl=64 time=0.582 ms
+64 bytes from 192.168.0.166: icmp_seq=4 ttl=64 time=0.381 ms
+^C
+--- 192.168.0.166 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3054ms
+rtt min/avg/max/mdev = 0.381/0.706/1.233/0.318 ms
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ routew [K[K add -host 192.168.0.166  
+reject
+SIOCADDRT: Operation not permitted
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ /ETC/RESOLV.COMN[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ketc/resolv.conf.[K/ [K[K nameserver
+bash: etc/resolv.conf: No such file or directory
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ /etc/resolv.conf 
+bash: /etc/resolv.conf: Permission denied
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ ssh@[K a[Kcs1951[K[K[K[K18c51 [K@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c51@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+$ exit
+Connection to 192.168.0.30 closed.
+
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ rsynxc[K[Kc -av 030[K[K302/test/
+sending incremental file list
+rsync: change_dir "/home/s4c2/ceccs18c51/cs232/0302//0302/test" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ cat /etc/reo[Ksolv.conf
+# Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)
+#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN
+nameserver 127.0.1.1
+search example.org
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ ech[K[K[Ksearch github.com
+No command 'search' found, did you mean:
+ Command 'searchd' from package 'sphinxsearch' (universe)
+ Command 'rsearch' from package '389-ds-base' (universe)
+ Command 'setarch' from package 'util-linux' (main)
+ Command 'starch' from package 'coop-computing-tools' (universe)
+ Command 'csearch' from package 'codesearch' (universe)
+ Command 'vsearch' from package 'vsearch' (universe)
+search: command not found
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ cst [K[K[Kat /etc/resolv/[K.conm[Kf search gi 
+thub.com
+# Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)
+#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN
+nameserver 127.0.1.1
+search example.org
+cat: search: No such file or directory
+cat: github.com: No such file or directory
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ cat /etc.[K/resolv.conf/search[K[K[K[Karch
+cat: /etc/resolv.conf/search: Not a directory
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ rsync cs18c51@192.168.0.30
+rsync: link_stat "/home/s4c2/ceccs18c51/cs232/0302/cs18c51@192.168.0.30" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ s[Krsync -a
+rsync  version 3.1.1  protocol version 31
+Copyright (C) 1996-2014 by Andrew Tridgell, Wayne Davison, and others.
+Web site: http://rsync.samba.org/
+Capabilities:
+    64-bit files, 64-bit inums, 64-bit timestamps, 64-bit long ints,
+    socketpairs, hardlinks, symlinks, IPv6, batchfiles, inplace,
+    append, ACLs, xattrs, iconv, symtimes, prealloc
+
+rsync comes with ABSOLUTELY NO WARRANTY.  This is free software, and you
+are welcome to redistribute it under certain conditions.  See the GNU
+General Public Licence for details.
+
+rsync is a file transfer program capable of efficient remote update
+via a fast differencing algorithm.
+
+Usage: rsync [OPTION]... SRC [SRC]... DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
+  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+The ':' usages connect via remote shell, while '::' & 'rsync://' usages connect
+to an rsync daemon, and require SRC or DEST to start with a module name.
+
+Options
+ -v, --verbose               increase verbosity
+     --info=FLAGS            fine-grained informational verbosity
+     --debug=FLAGS           fine-grained debug verbosity
+     --msgs2stderr           special output handling for debugging
+ -q, --quiet                 suppress non-error messages
+     --no-motd               suppress daemon-mode MOTD (see manpage caveat)
+ -c, --checksum              skip based on checksum, not mod-time & size
+ -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+     --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+ -r, --recursive             recurse into directories
+ -R, --relative              use relative path names
+     --no-implied-dirs       don't send implied dirs with --relative
+ -b, --backup                make backups (see --suffix & --backup-dir)
+     --backup-dir=DIR        make backups into hierarchy based in DIR
+     --suffix=SUFFIX         set backup suffix (default ~ w/o --backup-dir)
+ -u, --update                skip files that are newer on the receiver
+     --inplace               update destination files in-place (SEE MAN PAGE)
+     --append                append data onto shorter files
+     --append-verify         like --append, but with old data in file checksum
+ -d, --dirs                  transfer directories without recursing
+ -l, --links                 copy symlinks as symlinks
+ -L, --copy-links            transform symlink into referent file/dir
+     --copy-unsafe-links     only "unsafe" symlinks are transformed
+     --safe-links            ignore symlinks that point outside the source tree
+     --munge-links           munge symlinks to make them safer (but unusable)
+ -k, --copy-dirlinks         transform symlink to a dir into referent dir
+ -K, --keep-dirlinks         treat symlinked dir on receiver as dir
+ -H, --hard-links            preserve hard links
+ -p, --perms                 preserve permissions
+ -E, --executability         preserve the file's executability
+     --chmod=CHMOD           affect file and/or directory permissions
+ -A, --acls                  preserve ACLs (implies --perms)
+ -X, --xattrs                preserve extended attributes
+ -o, --owner                 preserve owner (super-user only)
+ -g, --group                 preserve group
+     --devices               preserve device files (super-user only)
+     --specials              preserve special files
+ -D                          same as --devices --specials
+ -t, --times                 preserve modification times
+ -O, --omit-dir-times        omit directories from --times
+ -J, --omit-link-times       omit symlinks from --times
+     --super                 receiver attempts super-user activities
+     --fake-super            store/recover privileged attrs using xattrs
+ -S, --sparse                handle sparse files efficiently
+     --preallocate           allocate dest files before writing them
+ -n, --dry-run               perform a trial run with no changes made
+ -W, --whole-file            copy files whole (without delta-xfer algorithm)
+ -x, --one-file-system       don't cross filesystem boundaries
+ -B, --block-size=SIZE       force a fixed checksum block-size
+ -e, --rsh=COMMAND           specify the remote shell to use
+     --rsync-path=PROGRAM    specify the rsync to run on the remote machine
+     --existing              skip creating new files on receiver
+     --ignore-existing       skip updating files that already exist on receiver
+     --remove-source-files   sender removes synchronized files (non-dirs)
+     --del                   an alias for --delete-during
+     --delete                delete extraneous files from destination dirs
+     --delete-before         receiver deletes before transfer, not during
+     --delete-during         receiver deletes during the transfer
+     --delete-delay          find deletions during, delete after
+     --delete-after          receiver deletes after transfer, not during
+     --delete-excluded       also delete excluded files from destination dirs
+     --ignore-missing-args   ignore missing source args without error
+     --delete-missing-args   delete missing source args from destination
+     --ignore-errors         delete even if there are I/O errors
+     --force                 force deletion of directories even if not empty
+     --max-delete=NUM        don't delete more than NUM files
+     --max-size=SIZE         don't transfer any file larger than SIZE
+     --min-size=SIZE         don't transfer any file smaller than SIZE
+     --partial               keep partially transferred files
+     --partial-dir=DIR       put a partially transferred file into DIR
+     --delay-updates         put all updated files into place at transfer's end
+ -m, --prune-empty-dirs      prune empty directory chains from the file-list
+     --numeric-ids           don't map uid/gid values by user/group name
+     --usermap=STRING        custom username mapping
+     --groupmap=STRING       custom groupname mapping
+     --chown=USER:GROUP      simple username/groupname mapping
+     --timeout=SECONDS       set I/O timeout in seconds
+     --contimeout=SECONDS    set daemon connection timeout in seconds
+ -I, --ignore-times          don't skip files that match in size and mod-time
+ -M, --remote-option=OPTION  send OPTION to the remote side only
+     --size-only             skip files that match in size
+     --modify-window=NUM     compare mod-times with reduced accuracy
+ -T, --temp-dir=DIR          create temporary files in directory DIR
+ -y, --fuzzy                 find similar file for basis if no dest file
+     --compare-dest=DIR      also compare destination files relative to DIR
+     --copy-dest=DIR         ... and include copies of unchanged files
+     --link-dest=DIR         hardlink to files in DIR when unchanged
+ -z, --compress              compress file data during the transfer
+     --compress-level=NUM    explicitly set compression level
+     --skip-compress=LIST    skip compressing files with a suffix in LIST
+ -C, --cvs-exclude           auto-ignore files the same way CVS does
+ -f, --filter=RULE           add a file-filtering RULE
+ -F                          same as --filter='dir-merge /.rsync-filter'
+                             repeated: --filter='- .rsync-filter'
+     --exclude=PATTERN       exclude files matching PATTERN
+     --exclude-from=FILE     read exclude patterns from FILE
+     --include=PATTERN       don't exclude files matching PATTERN
+     --include-from=FILE     read include patterns from FILE
+     --files-from=FILE       read list of source-file names from FILE
+ -0, --from0                 all *-from/filter files are delimited by 0s
+ -s, --protect-args          no space-splitting; only wildcard special-chars
+     --address=ADDRESS       bind address for outgoing socket to daemon
+     --port=PORT             specify double-colon alternate port number
+     --sockopts=OPTIONS      specify custom TCP options
+     --blocking-io           use blocking I/O for the remote shell
+     --stats                 give some file-transfer stats
+ -8, --8-bit-output          leave high-bit chars unescaped in output
+ -h, --human-readable        output numbers in a human-readable format
+     --progress              show progress during transfer
+ -P                          same as --partial --progress
+ -i, --itemize-changes       output a change-summary for all updates
+     --out-format=FORMAT     output updates using the specified FORMAT
+     --log-file=FILE         log what we're doing to the specified FILE
+     --log-file-format=FMT   log updates using the specified FMT
+     --password-file=FILE    read daemon-access password from FILE
+     --list-only             list the files instead of copying them
+     --bwlimit=RATE          limit socket I/O bandwidth
+     --outbuf=N|L|B          set output buffering to None, Line, or Block
+     --write-batch=FILE      write a batched update to FILE
+     --only-write-batch=FILE like --write-batch but w/o updating destination
+     --read-batch=FILE       read a batched update from FILE
+     --protocol=NUM          force an older protocol version to be used
+     --iconv=CONVERT_SPEC    request charset conversion of filenames
+     --checksum-seed=NUM     set block/file checksum seed (advanced)
+     --noatime               do not alter atime when opening source files
+ -4, --ipv4                  prefer IPv4
+ -6, --ipv6                  prefer IPv6
+     --version               print version number
+(-h) --help                  show this help (-h is --help only if used alone)
+
+Use "rsync --daemon --help" to see the daemon-mode command-line options.
+Please see the rsync(1) and rsyncd.conf(5) man pages for full documentation.
+See http://rsync.samba.org/ for updates, bug reports, and answers
+rsync error: syntax or usage error (code 1) at main.c(1640) [Receiver=3.1.1]
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ scp[K[K[Krsync
+rsync  version 3.1.1  protocol version 31
+Copyright (C) 1996-2014 by Andrew Tridgell, Wayne Davison, and others.
+Web site: http://rsync.samba.org/
+Capabilities:
+    64-bit files, 64-bit inums, 64-bit timestamps, 64-bit long ints,
+    socketpairs, hardlinks, symlinks, IPv6, batchfiles, inplace,
+    append, ACLs, xattrs, iconv, symtimes, prealloc
+
+rsync comes with ABSOLUTELY NO WARRANTY.  This is free software, and you
+are welcome to redistribute it under certain conditions.  See the GNU
+General Public Licence for details.
+
+rsync is a file transfer program capable of efficient remote update
+via a fast differencing algorithm.
+
+Usage: rsync [OPTION]... SRC [SRC]... DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
+  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+The ':' usages connect via remote shell, while '::' & 'rsync://' usages connect
+to an rsync daemon, and require SRC or DEST to start with a module name.
+
+Options
+ -v, --verbose               increase verbosity
+     --info=FLAGS            fine-grained informational verbosity
+     --debug=FLAGS           fine-grained debug verbosity
+     --msgs2stderr           special output handling for debugging
+ -q, --quiet                 suppress non-error messages
+     --no-motd               suppress daemon-mode MOTD (see manpage caveat)
+ -c, --checksum              skip based on checksum, not mod-time & size
+ -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+     --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+ -r, --recursive             recurse into directories
+ -R, --relative              use relative path names
+     --no-implied-dirs       don't send implied dirs with --relative
+ -b, --backup                make backups (see --suffix & --backup-dir)
+     --backup-dir=DIR        make backups into hierarchy based in DIR
+     --suffix=SUFFIX         set backup suffix (default ~ w/o --backup-dir)
+ -u, --update                skip files that are newer on the receiver
+     --inplace               update destination files in-place (SEE MAN PAGE)
+     --append                append data onto shorter files
+     --append-verify         like --append, but with old data in file checksum
+ -d, --dirs                  transfer directories without recursing
+ -l, --links                 copy symlinks as symlinks
+ -L, --copy-links            transform symlink into referent file/dir
+     --copy-unsafe-links     only "unsafe" symlinks are transformed
+     --safe-links            ignore symlinks that point outside the source tree
+     --munge-links           munge symlinks to make them safer (but unusable)
+ -k, --copy-dirlinks         transform symlink to a dir into referent dir
+ -K, --keep-dirlinks         treat symlinked dir on receiver as dir
+ -H, --hard-links            preserve hard links
+ -p, --perms                 preserve permissions
+ -E, --executability         preserve the file's executability
+     --chmod=CHMOD           affect file and/or directory permissions
+ -A, --acls                  preserve ACLs (implies --perms)
+ -X, --xattrs                preserve extended attributes
+ -o, --owner                 preserve owner (super-user only)
+ -g, --group                 preserve group
+     --devices               preserve device files (super-user only)
+     --specials              preserve special files
+ -D                          same as --devices --specials
+ -t, --times                 preserve modification times
+ -O, --omit-dir-times        omit directories from --times
+ -J, --omit-link-times       omit symlinks from --times
+     --super                 receiver attempts super-user activities
+     --fake-super            store/recover privileged attrs using xattrs
+ -S, --sparse                handle sparse files efficiently
+     --preallocate           allocate dest files before writing them
+ -n, --dry-run               perform a trial run with no changes made
+ -W, --whole-file            copy files whole (without delta-xfer algorithm)
+ -x, --one-file-system       don't cross filesystem boundaries
+ -B, --block-size=SIZE       force a fixed checksum block-size
+ -e, --rsh=COMMAND           specify the remote shell to use
+     --rsync-path=PROGRAM    specify the rsync to run on the remote machine
+     --existing              skip creating new files on receiver
+     --ignore-existing       skip updating files that already exist on receiver
+     --remove-source-files   sender removes synchronized files (non-dirs)
+     --del                   an alias for --delete-during
+     --delete                delete extraneous files from destination dirs
+     --delete-before         receiver deletes before transfer, not during
+     --delete-during         receiver deletes during the transfer
+     --delete-delay          find deletions during, delete after
+     --delete-after          receiver deletes after transfer, not during
+     --delete-excluded       also delete excluded files from destination dirs
+     --ignore-missing-args   ignore missing source args without error
+     --delete-missing-args   delete missing source args from destination
+     --ignore-errors         delete even if there are I/O errors
+     --force                 force deletion of directories even if not empty
+     --max-delete=NUM        don't delete more than NUM files
+     --max-size=SIZE         don't transfer any file larger than SIZE
+     --min-size=SIZE         don't transfer any file smaller than SIZE
+     --partial               keep partially transferred files
+     --partial-dir=DIR       put a partially transferred file into DIR
+     --delay-updates         put all updated files into place at transfer's end
+ -m, --prune-empty-dirs      prune empty directory chains from the file-list
+     --numeric-ids           don't map uid/gid values by user/group name
+     --usermap=STRING        custom username mapping
+     --groupmap=STRING       custom groupname mapping
+     --chown=USER:GROUP      simple username/groupname mapping
+     --timeout=SECONDS       set I/O timeout in seconds
+     --contimeout=SECONDS    set daemon connection timeout in seconds
+ -I, --ignore-times          don't skip files that match in size and mod-time
+ -M, --remote-option=OPTION  send OPTION to the remote side only
+     --size-only             skip files that match in size
+     --modify-window=NUM     compare mod-times with reduced accuracy
+ -T, --temp-dir=DIR          create temporary files in directory DIR
+ -y, --fuzzy                 find similar file for basis if no dest file
+     --compare-dest=DIR      also compare destination files relative to DIR
+     --copy-dest=DIR         ... and include copies of unchanged files
+     --link-dest=DIR         hardlink to files in DIR when unchanged
+ -z, --compress              compress file data during the transfer
+     --compress-level=NUM    explicitly set compression level
+     --skip-compress=LIST    skip compressing files with a suffix in LIST
+ -C, --cvs-exclude           auto-ignore files the same way CVS does
+ -f, --filter=RULE           add a file-filtering RULE
+ -F                          same as --filter='dir-merge /.rsync-filter'
+                             repeated: --filter='- .rsync-filter'
+     --exclude=PATTERN       exclude files matching PATTERN
+     --exclude-from=FILE     read exclude patterns from FILE
+     --include=PATTERN       don't exclude files matching PATTERN
+     --include-from=FILE     read include patterns from FILE
+     --files-from=FILE       read list of source-file names from FILE
+ -0, --from0                 all *-from/filter files are delimited by 0s
+ -s, --protect-args          no space-splitting; only wildcard special-chars
+     --address=ADDRESS       bind address for outgoing socket to daemon
+     --port=PORT             specify double-colon alternate port number
+     --sockopts=OPTIONS      specify custom TCP options
+     --blocking-io           use blocking I/O for the remote shell
+     --stats                 give some file-transfer stats
+ -8, --8-bit-output          leave high-bit chars unescaped in output
+ -h, --human-readable        output numbers in a human-readable format
+     --progress              show progress during transfer
+ -P                          same as --partial --progress
+ -i, --itemize-changes       output a change-summary for all updates
+     --out-format=FORMAT     output updates using the specified FORMAT
+     --log-file=FILE         log what we're doing to the specified FILE
+     --log-file-format=FMT   log updates using the specified FMT
+     --password-file=FILE    read daemon-access password from FILE
+     --list-only             list the files instead of copying them
+     --bwlimit=RATE          limit socket I/O bandwidth
+     --outbuf=N|L|B          set output buffering to None, Line, or Block
+     --write-batch=FILE      write a batched update to FILE
+     --only-write-batch=FILE like --write-batch but w/o updating destination
+     --read-batch=FILE       read a batched update from FILE
+     --protocol=NUM          force an older protocol version to be used
+     --iconv=CONVERT_SPEC    request charset conversion of filenames
+     --checksum-seed=NUM     set block/file checksum seed (advanced)
+     --noatime               do not alter atime when opening source files
+ -4, --ipv4                  prefer IPv4
+ -6, --ipv6                  prefer IPv6
+     --version               print version number
+(-h) --help                  show this help (-h is --help only if used alone)
+
+Use "rsync --daemon --help" to see the daemon-mode command-line options.
+Please see the rsync(1) and rsyncd.conf(5) man pages for full documentation.
+See http://rsync.samba.org/ for updates, bug reports, and answers
+rsync error: syntax or usage error (code 1) at main.c(1556) [client=3.1.1]
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ nc 192.169[K8.0.1666[K port
+nc: port number invalid: port
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ nc 192.168.-0[K[K0.166 212
+hey
+^C
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ nc -l 55555
+^C
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ nc -l 55555
+hey
+jdg
+poda m  aire3       aire          ap lpha bravo charlie delta
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ cp [K[K[Kscp -p port
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ scp -r
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ scp work.txt ask@192.168.0.30
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ scp work.txt ask@192.168.0.30[C[1P92.168.0.30[1P2.168.0.30[1P.168.0.30[1P168.0.30[1P68.0.30[1P8.0.30[1P.0.30[1P0.30[1P.30[1P30[1P0[K14.139.184.21 
+56[K
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ grep report.txt
+
+^C
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ gedit report.txt
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ gedit report.txt
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ gedit report.txt
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ ftp C[Kcs18c51@192.168.0.30
+ftp: cs18c51@192.168.0.30: Temporary failure in name resolution
+ftp> exit
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ sftp [K[K[K[K[Kftp cs18c51@192.168.0.30[1@s
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c51@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> cd 2701
+sftp> get report.txt
+Fetching /home/cs18c51/2701/report.txt to report.txt
+
+/home/cs18c51/2701/report.txt                   0%    0     0.0KB/s   --:-- ETA
+/home/cs18c51/2701/report.txt                 100% 2113     2.1KB/s   00:00    
+sftp> cd ..
+sftp> mkdir 0302
+sftp> cd 02[K302
+sftp> get report.txt
+File "/home/cs18c51/0302/report.txt" not found.
+
+sftp> cd ..
+sftp> ls
+0302                2701                examples.desktop    
+sftp> pwd
+Remote working directory: /home/cs18c51
+sftp> cd 0302
+sftp> put report.txt
+Uploading report.txt to /home/cs18c51/0302/report.txt
+
+report.txt                                      0%    0     0.0KB/s   --:-- ETA
+report.txt                                    100% 2113     2.1KB/s   00:00    
+sftp> rename report.txt report1.txt
+sftp> rename report.txt report1.txt[7G[15Pput report.txt[7Gcd 0302[K[7Gpwd[Kls[Kcd ..[7Gget report.txt[7Gcd 0302[K[7Gget report.txt
+File "/home/cs18c51/0302/report.txt" not found.
+
+sftp> get report .txt 1.txt
+Fetching /home/cs18c51/0302/report1.txt to report1.txt
+
+/home/cs18c51/0302/report1.txt                  0%    0     0.0KB/s   --:-- ETA
+/home/cs18c51/0302/report1.txt                100% 2113     2.1KB/s   00:00    
+sftp> delete report1.txt
+Invalid command.
+
+sftp> ls
+report1.txt  
+sftp> delete report1.txt
+Invalid command.
+
+sftp> del report.[K1.txt
+Invalid command.
+
+sftp> rm report1.txt
+Removing /home/cs18c51/0302/report1.txt
+sftp> ls
+sftp> cd ..\[K
+sftp> pwd
+Remote working directory: /home/cs18c51
+sftp> exit
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ nc -l [K[K[K[K[Kc 192.168.0.88 55555
+#4: Communicating via LAN
+---------------------------------
+
+Command/Shell script/Program name
+---------------------------------
+	
+	# NetChat Utility
+	nc IP port	
+
+--------------------------------
+Output: 
+
+
+	# user1$ nc -l 55555
+	
+	# user2$ nc 192.168.0.75 55555
+	
+	Here, user1 and user2 can communicate via the terminal.
+
+hey-------------------xswsdq
+\
+haii
+heloo
+bye
+^C
+]0;s4c2@lab2-Veriton-Series: ~/ceccs18c51/cs232/0302[01;32ms4c2@lab2-Veriton-Series[00m:[01;34m~/ceccs18c51/cs232/0302[00m$ exit
+exit
+
+Script done on Thursday 11 February 2016 11:27:04 PM IST

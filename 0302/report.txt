@@ -1,0 +1,151 @@
+CEC CS 18 C51    03-02-2020
+Rojin K Sunny
+
+--------------------------------
+#1: Aim: T3 Tasks. ifconfig operations
+---------------------------------
+Program: ifconfig
+         ifconfig -a
+         ifconfig enp0s25
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+          
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Terminal displays details of active/all/specific device.
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+#2: Aim: T3 Task. Route operations
+---------------------------------
+Program: route 
+         route -n
+         ping 192.168.0.166
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+          
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Terminal displays the route/numerical ip/ping report from the system to which the given ip belongs.
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+#3: Aim: T4 Task. ssh access to server
+---------------------------------
+Program: ssh cs18c51@192.168.0.30
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+     
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Enter the server, logged in using password and exited.
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+
+#4: Aim: T4 Task. rsync operations
+---------------------------------
+Program: rsync 
+         rsync -a
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+       
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Terminal displays the rsync operations available. Used it to copy files.
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+
+#5: Aim: T4 Task. scp operations
+---------------------------------
+Program: scp -p port
+         scp work.txt ask@14.139.184.215
+
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+     
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        File was created titled so.
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+
+#6: Aim: T5 Task. sftp operations
+---------------------------------
+Program: sftp cs18c51@192.168.0.30
+         cd 2701
+         get report.txt
+         cd .. 
+         mkdir 0302
+         cd 0302
+         put report.txt
+         rename report.txt report1.txt
+         rm report1.txt
+         exit
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+     
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Entered server. Pulled previous report from 2701 and pushed it to today's directory titled 0302. Renamed it to report1.txt and removed it from the server. Proceeded to exit from the server. 
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+
+
+
+
+
