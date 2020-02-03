@@ -143,7 +143,26 @@ Remarks if any:
 
 -------------------------------------
 -------------------------------------
+#7: Aim: Netchat operations
+---------------------------------
+Program: nc -l 55555
+         
 
+---------------------------------
+
+Input: (If relevant)
+---------------
+     
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        Created a netchat port and communicated with a system under the same lan.
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
 
 
 
