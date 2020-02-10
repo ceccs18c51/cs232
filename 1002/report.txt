@@ -1,0 +1,22 @@
+CEC CS 18 C51    10-02-2020
+Rojin K Sunny
+
+--------------------------------
+#1: Aim: T2 Tasks. S1,S2 result cgpa
+---------------------------------
+Program: script.sh file
+---------------------------------
+
+Input: result_CHN.pdf
+---------------
+          
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+        cgpa.txt
+-------------------
+Remarks if any:
+        Results of s1 and s2 stored in such named files, that contain the cgpa.txt and script.sh of each corresponding result.
+
+-------------------------------------
+-------------------------------------
