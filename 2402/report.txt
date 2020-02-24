@@ -1,0 +1,22 @@
+CEC CS 18 C51    24-02-2020
+Rojin K Sunny
+ip: 192.168.0.197
+MAC: 10:78:d2:40:ca:46
+--------------------------------
+#1: Aim: T9 Task. Creating a webpage in ftp server.
+---------------------------------
+Program: index.html file
+---------------------------------
+
+Input: 
+---------------
+          
+--------------------------------
+Output: Fully functional webpage that directs to appropirate work files and reports with hypertexts.
+  http://192.168.0.30/cs18c/cs18c51/
+-------------------
+Remarks if any:
+        The .png screenshot of the webpage as well as the html file has been uploaded to the ftp server's appropriate directory.
+
+-------------------------------------
+-------------------------------------
