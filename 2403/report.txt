@@ -1,0 +1,39 @@
+CECCS18C51                  24-03-2020
+ROJIN K SUNNY
+ip: 192.168.1.168
+mac: 80:91:33:5d:f8:af
+------------------------------------------------------
+#1: Setting up http and ftp servers (t7)
+------------------------------------------------------
+
+Command/Shell input:
+------------------------------------------------------
+	
+	# installed ftp server in home pc
+	sudo apt-get install vsftpd
+	
+	# edited server configuration using nano editor
+	sudo nano /etc/vsftpd.conf
+	
+	# connected to ftp on local server in  pc
+	fpt localhost	
+	
+	# installed apache2 in home pc
+	sudo apt-get install apache2
+	
+	# edited HTML file using nano editor and accessed it via 127.0.0.1
+	sudo nano /var/www/html/index.html
+
+-------------------------------------------------------
+Output: 
+	
+	# ftp server successfully set up in home pc 
+	
+	# Apache http server :screenshot of webpage is attached.
+	capture.png	
+
+--------------------------------------------------------
+Remarks if any: 
+
+        Since I was working from my home, I couldn't connect another computer to the server in my laptop. Kindly acknowldge.
+                
