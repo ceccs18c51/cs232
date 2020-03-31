@@ -1,0 +1,131 @@
+CECCS18C51                  31-03-2020
+ROJIN K SUNNY
+ip: 192.168.1.168
+mac: 80:91:33:5d:f8:af
+------------------------------------------------------
+#1: LAMP Stack operations (t8)
+------------------------------------------------------
+Command/Shell input:
+
+        # created a script file with all necessary installation commands
+	sudo nano lamp.sh
+	
+	# modified permissions and executed the script file
+	sudo chmod 777 lamp.sh
+        ./lamp.sh
+	
+	# edited the conf file to enable php
+	sudo nano /etc/apache2/mods-enabled/dir.conf	
+	
+	# php version information
+	sudo nano /var/www/html/info.php
+	
+	# php webpage
+	sudo nano /var/www/html/index.php
+------------------------------------------------------
+Input:  
+
+        # LAMP installation script file
+        lamp.sh
+
+        # php version info page
+        info.php
+
+        # php home page
+        index.php
+	
+
+-------------------------------------------------------
+Output: 
+	
+	# 127.0.0.1/info.php gives php version info page 
+	infophp.png
+
+	# 127.0.0.1 gives php home webpage
+        indexphp.png	
+
+--------------------------------------------------------
+Remarks if any: 
+
+------------------------------------------------------
+#2: Package management (t8)
+------------------------------------------------------
+Command/Shell input:
+
+        # installed debian rar file
+	sudo dpkg -i rar_5.5.0-1_amd64.deb
+	
+	# removed rar from packages
+	sudo dpkg -r rar
+	
+	# updated list of available packages
+	sudo apt update	
+	
+	# installed rar package using apt
+	sudo apt-get install rar
+	
+	# removed the rar package
+	sudo apt remove rar
+
+	# created a list of all installed packages
+ 	sudo apt list >  packages.txt
+------------------------------------------------------
+Input:  
+
+        # .deb package of rar
+        rar_5.5.0-1_amd64.deb
+	
+-------------------------------------------------------
+Output: 
+	
+	# list of installed packages
+ 	packages.txt
+
+--------------------------------------------------------
+Remarks if any: 
+
+------------------------------------------------------
+#3: Kernel Compilation (t8)
+------------------------------------------------------
+Command/Shell input:
+
+        # extracted source code from pre-downloaded kernel file(kernel.org)
+	unxz -v linux-5.5.9.tar.xz
+
+	# downloaded PGP Signature for the kernel
+	wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.tar.sign
+	
+	# verified the kernel tarball with GnuPG
+	gpg --verify linux-5.6.tar.sign
+	
+	# extracted the tarball
+	tar xvf linux-5.6.tar
+	
+	# entered the linux folder
+	cd linux-5.6
+
+	# created the configuration file
+ 	cp -v /boot/config-$(uname -r) .config
+
+	# installed development tools required to compile the kernel
+	sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
+
+	# compiled the kernel
+	make -j $(nproc)
+------------------------------------------------------
+Input:  
+
+        # kernel file from kernel.org
+        linux-5.6.tar.xz
+	
+-------------------------------------------------------
+Output: 
+	
+	# compiled the kernel at /linux-5.6
+ 	kernelcompile.png
+
+--------------------------------------------------------
+Remarks if any: 
+
+       The final compiled folder had a size of 19.5GB, and took 2 hours of processing time to fully compile, with the CPU running at 3.7GHz clock speed.
+       
